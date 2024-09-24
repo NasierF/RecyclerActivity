@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val nums = arrayOf(3,6,9,12,15,18,20,30,40,50)
+        val nums = Array(50){i -> (i + 1) * 2}
         // TODO Step 1: Reference RecyclerView object
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
 
